@@ -9,14 +9,19 @@ neorg.setup({
 		["core.norg.dirman"] = {
 			config = {
 				workspaces = {
-					work = "~/notes/work",
-					home = "~/notes/home",
+					work = "~/notes/NeorgNotes/W/G/S",
 				},
 			},
 		},
 		["core.norg.concealer"] = {
-			icon_preset = "brave",
+			config = {
+				icon_preset = "basic",
+			},
 		},
-		["core.norg.completion"] = {},
+		["core.norg.completion"] = {
+			config = {
+				engine = "nvim-cmp",
+			},
+		},
 	},
 })
