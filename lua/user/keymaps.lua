@@ -40,7 +40,7 @@ keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
--- Press jk fast to enter
+-- Press jk fast to exit
 keymap("i", "jk", "<ESC>", opts)
 
 -- Visual --
@@ -59,6 +59,12 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Cutlass --
+keymap("n", "m", "d", opts)
+keymap("x", "m", "d", opts)
+keymap("n", "mm", "dd", opts)
+keymap("n", "M", "D", opts)
 
 -- Terminal --
 -- Better terminal navigation

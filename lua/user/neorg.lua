@@ -9,7 +9,8 @@ neorg.setup({
 		["core.norg.dirman"] = {
 			config = {
 				workspaces = {
-					work = "~/notes/NeorgNotes/W/G/S",
+					work = "~/Dropbox/NeorgNotes/W/G/S",
+					personal = "~/Dropbox/NeorgNotes/p",
 				},
 			},
 		},

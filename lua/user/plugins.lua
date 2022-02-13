@@ -40,6 +40,11 @@ packer.init({
 
 -- Install your plugins here
 return packer.startup(function(use)
+	-- Init Plugins
+	use("tpope/vim-sensible")
+	use("tpope/vim-commentary")
+	use("svermeulen/vim-cutlass")
+
 	-- My plugins here
 	use("wbthomason/packer.nvim") -- Have packer manage itself
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
