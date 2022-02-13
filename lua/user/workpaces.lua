@@ -7,6 +7,7 @@ end
 workspaces.setup({
 	hooks = {
 		open_pre = {
+			"SessionsSave",
 			"SessionsStop",
 			"silent %bdelete!",
 		},

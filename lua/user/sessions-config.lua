@@ -4,6 +4,6 @@ if not status_ok then
 end
 
 sessions.setup({
-	events = { "WinEnter", "VimLeavePre", "BufEnter" },
+	events = { "BufEnter" },
 	session_filepath = ".nvim/session",
 })
