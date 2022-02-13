@@ -85,7 +85,7 @@ local mappings = {
 		"Buffers",
 	},
 	["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
-	["s"] = { "<cmd>w!<CR>", "Save" },
+	["w"] = { "<cmd>w!<CR>", "Save" },
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
@@ -95,14 +95,6 @@ local mappings = {
 	},
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
 	["P"] = { "<cmd>Telescope workspaces<cr>", "Projects" },
-
-	w = {
-		name = "Window Navigation",
-		h = { "<cmd>wincmd h<CR>", "Nav Left" },
-		j = { "<cmd>wincmd j<CR>", "Nav Down" },
-		k = { "<cmd>wincmd k<CR>", "Nav Up" },
-		l = { "<cmd>wincmd l<CR>", "Nav Right" },
-	},
 
 	p = {
 		name = "Packer",
@@ -140,7 +132,6 @@ local mappings = {
 		name = "Development",
 		e = { "<cmd>echo Hi1<CR>", "Echo" },
 		r = { "<cmd>lua require('nvim-reload').Reload()<CR>", "Reload Config" },
-		w = { "<cmd>Format<CR><cmd>w!<CR>", "Format and Save" },
 		f = {
 			name = "Flutter",
 			r = { "<cmd>FlutterRun<CR>", "Flutter Run" },
