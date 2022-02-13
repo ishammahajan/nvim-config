@@ -52,7 +52,6 @@ return packer.startup(function(use)
 	use("moll/vim-bbye")
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/toggleterm.nvim")
-	use("ahmedkhalf/project.nvim")
 	use("lewis6991/impatient.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
 	use("goolord/alpha-nvim")
@@ -64,6 +63,10 @@ return packer.startup(function(use)
 		"nvim-neorg/neorg",
 		requires = "nvim-lua/plenary.nvim",
 	})
+
+	-- Project Management
+	use("natecraddock/workspaces.nvim")
+	use("natecraddock/sessions.nvim")
 
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

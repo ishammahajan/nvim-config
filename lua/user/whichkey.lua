@@ -94,7 +94,7 @@ local mappings = {
 		"Find files",
 	},
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-	["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
+	["P"] = { "<cmd>Telescope workspaces<cr>", "Projects" },
 
 	w = {
 		name = "Window Navigation",
@@ -138,9 +138,9 @@ local mappings = {
 
 	d = {
 		name = "Development",
+		e = { "<cmd>echo Hi1<CR>", "Echo" },
 		r = { "<cmd>lua require('nvim-reload').Reload()<CR>", "Reload Config" },
 		w = { "<cmd>Format<CR><cmd>w!<CR>", "Format and Save" },
-		e = { "<cmd>echo Hi1<CR>", "Echo" },
 		f = {
 			name = "Flutter",
 			r = { "<cmd>FlutterRun<CR>", "Flutter Run" },
