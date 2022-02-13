@@ -139,10 +139,18 @@ local mappings = {
 	d = {
 		name = "Development",
 		r = { "<cmd>lua require('nvim-reload').Reload()<CR>", "Reload Config" },
-		e = { "<cmd>echo Hi1<CR>", "Echo" },
-		f = { "<cmd>FlutterRun<CR>", "Flutter Run" },
 		w = { "<cmd>Format<CR><cmd>w!<CR>", "Format and Save" },
-		c = { "<cmd>Cheatsheet<CR>", "Open Cheatsheet" },
+		e = { "<cmd>echo Hi1<CR>", "Echo" },
+		f = {
+			name = "Flutter",
+			r = { "<cmd>FlutterRun<CR>", "Flutter Run" },
+			f = { "<cmd>FlutterReload<CR>", "Flutter Reload" },
+			F = { "<cmd>FlutterRestart<CR>", "Flutter Restart" },
+			p = { "<cmd>FlutterPubGet<CR>", "Flutter Pub Get" },
+			o = { "<cmd>FlutterOutlineToggle<CR>", "Flutter Toggle Outline" },
+		},
+		p = { "<cmd>TroubleToggle<CR>", "Toggle Trouble" },
+		c = { "<cmd>Cheatsheet<CR>", "Toggle Cheatsheet" },
 	},
 
 	l = {
