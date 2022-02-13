@@ -7,12 +7,14 @@ end
 workspaces.setup({
 	hooks = {
 		open_pre = {
+			"NvimTreeClose",
 			"SessionsSave",
 			"SessionsStop",
 			"silent %bdelete!",
 		},
 		open = function()
 			require("sessions").load(nil, { silent = true })
+			require("nvim-tree").open()
 		end,
 	},
 })
