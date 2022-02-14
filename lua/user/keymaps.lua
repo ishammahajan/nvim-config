@@ -66,6 +66,9 @@ keymap("x", "m", "d", opts)
 keymap("n", "mm", "dd", opts)
 keymap("n", "M", "D", opts)
 
+-- Hippity Hoppity --
+keymap("n", "f", ":HopChar2<CR>", opts)
+
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)

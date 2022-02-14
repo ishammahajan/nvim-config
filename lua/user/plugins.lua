@@ -42,8 +42,6 @@ packer.init({
 return packer.startup(function(use)
 	-- Init Plugins
 	use("tpope/vim-sensible")
-	use("tpope/vim-commentary")
-	use("svermeulen/vim-cutlass")
 
 	-- My plugins here
 	use("wbthomason/packer.nvim") -- Have packer manage itself
@@ -68,6 +66,9 @@ return packer.startup(function(use)
 		"nvim-neorg/neorg",
 		requires = "nvim-lua/plenary.nvim",
 	})
+	use("tpope/vim-commentary")
+	use("svermeulen/vim-cutlass")
+	use("phaazon/hop.nvim")
 
 	-- Project Management
 	use("natecraddock/workspaces.nvim")
