@@ -5,7 +5,6 @@ end
 
 local actions = require("telescope.actions")
 
-telescope.load_extension("workspaces")
 telescope.setup({
 	defaults = {
 
