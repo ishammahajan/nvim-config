@@ -94,7 +94,7 @@ local mappings = {
 		"Find files",
 	},
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-	["P"] = { "<cmd>SessionManager load_session<cr>", "Projects" },
+	["P"] = { "<cmd>Telescope workspaces<cr>", "Projects" },
 
 	p = {
 		name = "Packer",
@@ -175,6 +175,7 @@ local mappings = {
 			"Workspace Symbols",
 		},
 	},
+
 	t = {
 		name = "Telescope",
 		b = { "<cmd>Telescope git_branches<cr>", "Checkout branch" },
@@ -196,6 +197,11 @@ local mappings = {
 		f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
 		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+	},
+
+	n = {
+		name = "Neorg",
+		m = { "<cmd>Neorg inject-metadata<CR>", "Inject Metadata" },
 	},
 }
 

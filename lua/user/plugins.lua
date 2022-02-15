@@ -71,6 +71,7 @@ return packer.startup(function(use)
 	use("phaazon/hop.nvim")
 
 	-- Project Management
+	use("natecraddock/workspaces.nvim")
 	use("Shatur/neovim-session-manager")
 
 	-- Colorschemes
