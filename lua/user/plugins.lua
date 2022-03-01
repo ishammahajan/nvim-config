@@ -124,6 +124,17 @@ return packer.startup(function(use)
 	-- Games
 	use("seandewar/nvimesweeper")
 	use("alec-gibson/nvim-tetris")
+
+	-- Trial Plugins
+	use({
+		"max397574/better-escape.nvim",
+		config = function()
+			require("better_escape").setup()
+		end,
+	})
+	use("github/copilot.vim")
+	use("j-hui/fidget.nvim")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
